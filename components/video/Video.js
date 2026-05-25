@@ -11,13 +11,21 @@ function Video() {
 
   const VideoPlay = useCallback((src) => {
     setVideo(src);
-    document.getElementById('videoContainer').style.opacity = 1;
-    document.getElementById('video').play();
+    const container = document.getElementById('videoContainer');
+    if (container) container.style.opacity = 1;
+    const vidElement = document.getElementById(`video-${src}`);
+    if (vidElement) {
+      vidElement.play().catch((e) => console.log('Video play error:', e));
+    }
   }, []);
 
   const VideoPause = useCallback(() => {
-    document.getElementById('videoContainer').style.opacity = 0;
-    document.getElementById('video').pause();
+    const container = document.getElementById('videoContainer');
+    if (container) container.style.opacity = 0;
+    ['design', 'develop', 'code'].forEach((src) => {
+      const vidElement = document.getElementById(`video-${src}`);
+      if (vidElement) vidElement.pause();
+    });
     setVideo('');
   }, []);
 
@@ -50,7 +58,7 @@ function Video() {
             muted
             loop
             controls={false}
-            id="video"
+            id="video-design"
             className={
               video === 'design' ? 'w-screen opacity-100' : 'w-0 opacity-0'
             }
@@ -63,7 +71,7 @@ function Video() {
             muted
             loop
             controls={false}
-            id="video"
+            id="video-develop"
             className={
               video === 'develop' ? 'w-screen opacity-100' : 'w-0 opacity-0'
             }
@@ -76,7 +84,7 @@ function Video() {
             muted
             loop
             controls={false}
-            id="video"
+            id="video-code"
             className={
               video === 'code' ? 'w-screen opacity-100' : 'w-0 opacity-0'
             }
