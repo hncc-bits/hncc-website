@@ -57,9 +57,9 @@ We use Husky, ESLint, and Prettier to maintain code quality. Please make sure yo
 2. Create your feature branch (`git checkout -b feature/AmazingFeature`).
 3. Commit your changes (`git commit -m 'Add some AmazingFeature'`). *Note: Husky will run a pre-commit hook to ensure code quality.*
 4. Push to the branch (`git push origin feature/AmazingFeature`).
-5. Open a Pull Request targeting the `dev` branch.
+5. Open a Pull Request targeting the `main` branch.
 
 ## CI/CD and Deployment
 
-- Pushes and Pull Requests to the `dev` branch automatically trigger a preview deployment on **Vercel** via our GitHub Actions workflow.
+- Pushes and Pull Requests to the `main` branch automatically trigger a preview deployment on **Vercel** via our GitHub Actions workflow.
 - Pushes to `main` are automatically deployed to our production environment on Vercel.
