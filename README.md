@@ -1,29 +1,65 @@
-# Next.js + Tailwind CSS Example
+# HNCC Website
 
-This example shows how to use [Tailwind CSS](https://tailwindcss.com/) [(v2.2)](https://blog.tailwindcss.com/tailwindcss-2-2) with Next.js. It follows the steps outlined in the official [Tailwind docs](https://tailwindcss.com/docs/guides/nextjs).
+The official website for the **Hackathon and Coding Club (HNCC)** at BIT Sindri.
 
-It uses the new [`Just-in-Time Mode`](https://tailwindcss.com/docs/just-in-time-mode) for Tailwind CSS.
+Built with **Next.js**, **Tailwind CSS**, and **React**.
 
-## Preview
+## Tech Stack
 
-Preview the example live on [StackBlitz](http://stackblitz.com/):
+- **Framework**: [Next.js](https://nextjs.org/) (v12)
+- **Styling**: [Tailwind CSS](https://tailwindcss.com/) (v3)
+- **Animations/Effects**: `tsparticles`
+- **Linting & Formatting**: ESLint, Prettier, Husky
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/vercel/next.js/tree/canary/examples/with-tailwindcss)
+## Getting Started
 
-## Deploy your own
+### Prerequisites
 
-Deploy the example using [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&utm_campaign=next-example):
+Ensure you have Node.js (version 18 or above) and `yarn` (or `npm`) installed on your local machine.
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https://github.com/vercel/next.js/tree/canary/examples/with-tailwindcss&project-name=with-tailwindcss&repository-name=with-tailwindcss)
+### Installation
 
-## How to use
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/hncc-bits/hncc-website.git
+   cd hncc-website
+   ```
 
-Execute [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) with [npm](https://docs.npmjs.com/cli/init) or [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/) to bootstrap the example:
+2. Install dependencies:
+   ```bash
+   yarn install
+   # or
+   npm install
+   ```
 
-```bash
-npx create-next-app --example with-tailwindcss with-tailwindcss-app
-# or
-yarn create next-app --example with-tailwindcss with-tailwindcss-app
-```
+3. Run the development server:
+   ```bash
+   yarn dev
+   # or
+   npm run dev
+   ```
 
-Deploy it to the cloud with [Vercel](https://vercel.com/new?utm_source=github&utm_medium=readme&utm_campaign=next-example) ([Documentation](https://nextjs.org/docs/deployment)).
+4. Open [http://localhost:3000](http://localhost:3000) with your browser to see the site running locally.
+
+## Scripts & Code Quality
+
+We use Husky, ESLint, and Prettier to maintain code quality. Please make sure your code is formatted before committing.
+
+- `yarn dev`: Starts the Next.js development server.
+- `yarn build`: Builds the app for production.
+- `yarn start`: Starts the production server.
+- `yarn style:all`: Runs both linting and formatting checks.
+- `yarn make-pretty`: Formats the entire codebase using Prettier.
+
+## Contributing
+
+1. Fork the repository.
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`).
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`). *Note: Husky will run a pre-commit hook to ensure code quality.*
+4. Push to the branch (`git push origin feature/AmazingFeature`).
+5. Open a Pull Request targeting the `dev` branch.
+
+## CI/CD and Deployment
+
+- Pushes and Pull Requests to the `dev` branch automatically trigger a preview deployment on **Vercel** via our GitHub Actions workflow.
+- Pushes to `main` are automatically deployed to our production environment on Vercel.
