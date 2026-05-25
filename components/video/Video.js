@@ -15,7 +15,7 @@ function Video() {
     if (container) container.style.opacity = 1;
     const vidElement = document.getElementById(`video-${src}`);
     if (vidElement) {
-      vidElement.play().catch((e) => console.log('Video play error:', e));
+      vidElement.play().catch(() => {});
     }
   }, []);
 
