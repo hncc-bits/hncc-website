@@ -20,12 +20,14 @@ Ensure you have Node.js (version 18 or above) and `yarn` (or `npm`) installed on
 ### Installation
 
 1. Clone the repository:
+
    ```bash
    git clone https://github.com/hncc-bits/hncc-website.git
    cd hncc-website
    ```
 
 2. Install dependencies:
+
    ```bash
    yarn install
    # or
@@ -33,6 +35,7 @@ Ensure you have Node.js (version 18 or above) and `yarn` (or `npm`) installed on
    ```
 
 3. Run the development server:
+
    ```bash
    yarn dev
    # or
@@ -55,7 +58,7 @@ We use Husky, ESLint, and Prettier to maintain code quality. Please make sure yo
 
 1. Fork the repository.
 2. Create your feature branch (`git checkout -b feature/AmazingFeature`).
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`). *Note: Husky will run a pre-commit hook to ensure code quality.*
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`). _Note: Husky will run a pre-commit hook to ensure code quality._
 4. Push to the branch (`git push origin feature/AmazingFeature`).
 5. Open a Pull Request targeting the `main` branch.
 

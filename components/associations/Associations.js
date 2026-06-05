@@ -84,10 +84,12 @@ function Associations() {
           <Content id="algorand">
             <h2>Algorand Blockchain Community, BIT Sindri</h2>
             <p>
-              Algorand Blockchain Community at BIT Sindri is dedicated to spreading awareness
-              and innovation in the field of blockchain technology and Web3.
-              In collaboration with Algorand, our chapter aims to provide students
-              with opportunities to explore decentralized technologies, smart contracts, and real-world blockchain applications.
+              Algorand Blockchain Community at BIT Sindri is dedicated to
+              spreading awareness and innovation in the field of blockchain
+              technology and Web3. In collaboration with Algorand, our chapter
+              aims to provide students with opportunities to explore
+              decentralized technologies, smart contracts, and real-world
+              blockchain applications.
             </p>
           </Content>
         </div>
