@@ -39,6 +39,15 @@ function Associations() {
                 />
               </a>
             </div>
+            <div className={Styles.associationMenuItem}>
+              <a href="#algorand">
+                <img
+                  className={Styles.associationImage}
+                  src="/sponsors/algo.png"
+                  alt="Algorand Student Chapter, BIT Sindri"
+                />
+              </a>
+            </div>
           </div>
         </div>
         <div className={Styles.associationContentContainer}>
@@ -70,6 +79,17 @@ function Associations() {
               competitive programming not just for the sake of getting placed in
               a product based company but to take up competitive programming for
               the fun of it.
+            </p>
+          </Content>
+          <Content id="algorand">
+            <h2>Algorand Blockchain Community, BIT Sindri</h2>
+            <p>
+              Algorand Blockchain Community at BIT Sindri is dedicated to
+              spreading awareness and innovation in the field of blockchain
+              technology and Web3. In collaboration with Algorand, our chapter
+              aims to provide students with opportunities to explore
+              decentralized technologies, smart contracts, and real-world
+              blockchain applications.
             </p>
           </Content>
         </div>
