@@ -78,7 +78,7 @@ a {
   opacity: 1;
 }
 
-@media screen(md) {
+@screen md {
   .fadeonscroll {
     transform: translateY(100px);
     transition: all 0.8s;
@@ -89,7 +89,7 @@ a {
   }
 }
 
-@media screen(xs) {
+@screen xs {
   .container-70 {
     width: 85%;
     margin: 0 auto;
