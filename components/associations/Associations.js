@@ -13,11 +13,38 @@ function Associations() {
         <div className={Styles.associationMenuContainer}>
           <div className={Styles.associationMenu}>
             <div className={Styles.associationMenuItem}>
+              <a href="#aws">
+                <img
+                  className={Styles.associationImage}
+                  src="/sponsors/aws.png"
+                  alt="AWS Student Builder Group (SBG), BIT Sindri"
+                />
+              </a>
+            </div>
+            <div className={Styles.associationMenuItem}>
+              <a href="#hackerrank">
+                <img
+                  className={Styles.associationImage}
+                  src="/sponsors/hackerrank.jpg"
+                  alt="HackerRank Campus Crew"
+                />
+              </a>
+            </div>
+            <div className={Styles.associationMenuItem}>
               <a href="#gdsc">
                 <img
                   className={Styles.associationImage}
                   src="/sponsors/gdsc.png"
                   alt="Google Developers Student Clubs, BIT Sindri"
+                />
+              </a>
+            </div>
+            <div className={Styles.associationMenuItem}>
+              <a href="#algorand">
+                <img
+                  className={Styles.associationImage}
+                  src="/sponsors/algo.png"
+                  alt="Algorand Student Chapter, BIT Sindri"
                 />
               </a>
             </div>
@@ -39,24 +66,48 @@ function Associations() {
                 />
               </a>
             </div>
-            <div className={Styles.associationMenuItem}>
-              <a href="#algorand">
-                <img
-                  className={Styles.associationImage}
-                  src="/sponsors/algo.png"
-                  alt="Algorand Student Chapter, BIT Sindri"
-                />
-              </a>
-            </div>
           </div>
         </div>
         <div className={Styles.associationContentContainer}>
+          <Content id="aws">
+            <h2>AWS Student Builder Group (SBG), BIT Sindri</h2>
+            <p>
+              AWS Student Builder Group (SBG) at BIT Sindri is a student-led
+              community dedicated to Cloud Computing, AWS, AI, and DevOps. It
+              provides students with hands-on learning opportunities through
+              workshops, projects, technical sessions, and community-driven
+              initiatives, helping them build industry-relevant skills and
+              connect with the global AWS ecosystem.
+            </p>
+          </Content>
+          <Content id="hackerrank">
+            <h2>HackerRank Campus Crew</h2>
+            <p>
+              HackerRank Campus Crew is a student leadership program that
+              empowers students to build and nurture coding communities on their
+              campuses. Campus Crew members organize technical events, coding
+              challenges, and learning initiatives that help students enhance
+              their programming and problem-solving skills while preparing for
+              future career opportunities in technology.
+            </p>
+          </Content>
           <Content id="gdsc">
             <h2>Google Developer Student Club, BIT Sindri</h2>
             <p>
               Developer Student Club BITS is inspired by the Google
               Developers&apos; Family. The motive is to create a local ecosystem
               of Developers in and around the Campus. And having fun doing it.
+            </p>
+          </Content>
+          <Content id="algorand">
+            <h2>Algorand Blockchain Community, BIT Sindri</h2>
+            <p>
+              Algorand Blockchain Community at BIT Sindri is dedicated to
+              spreading awareness and innovation in the field of blockchain
+              technology and Web3. In collaboration with Algorand, our chapter
+              aims to provide students with opportunities to explore
+              decentralized technologies, smart contracts, and real-world
+              blockchain applications.
             </p>
           </Content>
           <Content id="gfg">
@@ -79,17 +130,6 @@ function Associations() {
               competitive programming not just for the sake of getting placed in
               a product based company but to take up competitive programming for
               the fun of it.
-            </p>
-          </Content>
-          <Content id="algorand">
-            <h2>Algorand Blockchain Community, BIT Sindri</h2>
-            <p>
-              Algorand Blockchain Community at BIT Sindri is dedicated to
-              spreading awareness and innovation in the field of blockchain
-              technology and Web3. In collaboration with Algorand, our chapter
-              aims to provide students with opportunities to explore
-              decentralized technologies, smart contracts, and real-world
-              blockchain applications.
             </p>
           </Content>
         </div>
