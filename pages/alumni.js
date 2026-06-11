@@ -9,6 +9,7 @@ import {
   TeamData2k18,
   TeamData2k19,
   TeamData2k20,
+  TeamData2k21,
 } from '../lib/data/AlumniData';
 
 function Alumni() {
@@ -112,6 +113,23 @@ function Alumni() {
                 company={item.company}
                 imageSrc={`/teams/2k20/${item.imageSrc}.jpg`}
                 lazyImageSrc={`/teams/2k20/lazy/${item.imageSrc}-min.jpg`}
+                socials={item.socials}
+              />
+            );
+          })}
+        </div>
+
+        <h2 className={Styles.postHead}>Batch 2K21</h2>
+        <div className={`${Styles.cardContainer}`}>
+          {TeamData2k21.map((item, index) => {
+            return (
+              <TeamCard
+                key={`${String(index)}-team`}
+                name={item.name}
+                title={item.title}
+                company={item.company}
+                imageSrc={`/teams/2k21/${item.imageSrc}.JPG`}
+                lazyImageSrc={`/teams/2k21/lazy/${item.imageSrc}-min.jpg`}
                 socials={item.socials}
               />
             );
