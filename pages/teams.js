@@ -41,7 +41,7 @@ function Teams() {
                 key={`${String(index)}-team`}
                 name={item.name}
                 title={item.title}
-                imageSrc={`/teams/2k22/${item.imageSrc}.JPG`}
+                imageSrc={`/teams/2k22/${item.imageSrc}.jpg`}
                 lazyImageSrc={`/teams/2k22/lazy/${item.imageSrc}-min.jpg`}
                 socials={item.socials}
               />
@@ -105,14 +105,14 @@ function Teams() {
                 name={item.name}
                 title={item.title}
                 imageSrc={`/teams/2k23/${item.imageSrc}.jpg`}
-                lazyImageSrc={`/teams/2k23/lazy/${item.imageSrc}-min.jpg`}
+                lazyImageSrc={`/teams/2k23/lazy/${item.imageSrc}-min.png`}
                 socials={item.socials}
               />
             );
           })}
         </div>
 
-        <h2 className={Styles.postHead}>Technical Head</h2>
+        <h2 className={Styles.postHead}>Technical Leads</h2>
         <div className={`${Styles.cardContainer}`}>
           {TeamData2k23.slice(11).map((item, index) => {
             return (
@@ -121,7 +121,7 @@ function Teams() {
                 name={item.name}
                 title={item.title}
                 imageSrc={`/teams/2k23/${item.imageSrc}.jpg`}
-                lazyImageSrc={`/teams/2k23/lazy/${item.imageSrc}-min.jpg`}
+                lazyImageSrc={`/teams/2k23/lazy/${item.imageSrc}-min.png`}
                 socials={item.socials}
               />
             );
