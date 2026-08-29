@@ -19,7 +19,7 @@ function SocialsBar() {
       >
         <FaInstagram className={Styles.socialsBarIcons} size={ICON_SIZE} />
       </a>
-      <a href="https://github.com/hnccbits" target="_blank" rel="noreferrer">
+      <a href="https://github.com/hncc-bits" target="_blank" rel="noreferrer">
         <FaGithub className={Styles.socialsBarIcons} size={ICON_SIZE} />
       </a>
       <a
