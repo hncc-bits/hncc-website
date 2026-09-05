@@ -97,7 +97,7 @@ function Navbar() {
           <a className={styles.navLink}>CONTACT US</a>
         </Link>
         <a
-          href="https://docs.google.com/forms/d/e/1FAIpQLSfdUNFQFgNsVL0bTEqHksGHCm3BXGyiOyjyTycg2hfFZ9qlPg/viewform"
+          href="https://docs.google.com/forms/d/e/1FAIpQLSem5YguiL7qKFEkauXzFevxd6K1jd265p0FeBOu93OvaxTuvw/viewform"
           target="_blank"
           className="flex rounded-full"
           rel="noreferrer"
